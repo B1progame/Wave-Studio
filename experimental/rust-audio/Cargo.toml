@@ -1,0 +1,14 @@
+[package]
+name = "prowave-web-audio"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "Experimental WebAssembly bridge to the Pro Wave audio engine"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+prowave-engine = { git = "https://github.com/fabox-os/Pro-Wave.git", rev = "ce5bdc5c884dd0ca1712f145a2275f96e0c409a3" }
+rtrb = "0.4.0"
+wasm-bindgen = "0.2"
